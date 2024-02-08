@@ -1,2 +1,155 @@
-@import "./reset.css"
+@import "reset.css";
+/* PC (해상도 1024px)*/
+/* 
+  배경 : e6e9ee
+  왼쪽 상자 : 919fb9
+  왼 글자 : 
+  오른쪽 상자 : f2fdff
+  오 글자 : 686d76
 
+*/
+
+
+
+@media all and (min-width:768px) {
+  /*스타일입력*/
+  .main {
+    display: flex;
+    background-color: aqua;
+    width: 900px;
+    height: 450px;
+  }
+
+  
+.main_con1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  background-color: #919fb9;
+  flex-direction: column;
+  /*수직 정렬*/
+  color: #ede8ef;
+}
+
+
+.main_con2 {
+  position: relative;
+  width: 50%;
+  background-color: #f2fdff;
+}
+
+.menu {
+  width: 900px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu a {
+  padding: 15px;
+  text-decoration-line: none;
+  color: #919fb9;
+  font-size: 25px;
+  font-weight: bold;
+  
+}
+
+
+}
+
+/* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
+@media all and (max-width:767px) {
+  /*스타일입력*/
+  .main {
+    display: flex;
+    background-color: aqua;
+    width: 100%;
+    height: 800px;
+    flex-direction: column; /*수직 정렬*/
+  }
+
+  
+.main_con1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+  background-color: #919fb9;
+  flex-direction: column; /*수직 정렬*/
+  color: #ede8ef;
+}
+.main_con2 {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  background-color: #f2fdff;
+}
+
+
+.menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu a {
+  padding: 15px;
+  text-decoration-line: none;
+  color: #919fb9;
+  font-size: 25px;
+  font-weight: bold;
+  width: 50%;
+  text-align: center;
+}
+
+.menu a:hover {
+  background-color: #919fb944;
+}
+
+
+}
+
+
+html,
+body {
+  height: 100%;
+  background-color: #e6e9ee;
+}
+
+.test-label {
+  background-color: rgb(182, 236, 218);
+}
+
+.wrap {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main_con1 .logo {
+  width: 100px;
+  margin: 10px;
+}
+
+.main_con1 .logo-title {
+  text-align: center;
+  font-size: 25px;
+  margin: 10px;
+}
+
+.main_con2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_con2 p {
+  color: #686d76;
+}
+
+.line{
+  background-color: 
+}
